@@ -1,10 +1,10 @@
-# 🔥 ANDROID ROOT DETECTION BYPASS – FRIDA STRIKE OPERATION
+# LAB 11 ANDROID ROOT DETECTION BYPASS – FRIDA STRIKE OPERATION
 
 > *EL YAMANI OMAYMA*  
 
 ---
 
-## ⚡ EXECUTIVE SUMMARY
+##  EXECUTIVE SUMMARY
 
 **Target Application:** OWASP Uncrackable Level 1  
 **Attack Vector:** Frida Dynamic Instrumentation  
@@ -13,7 +13,7 @@
 
 ---
 
-## 📡 PHASE 1 – INFRASTRUCTURE RECONNAISSANCE
+##  PHASE 1 – INFRASTRUCTURE RECONNAISSANCE
 
 ### 1.1 Device Validation
 
@@ -171,26 +171,33 @@ Result: Both Java and native detection vectors neutralized simultaneously.
 ---
 ## PHASE 6 – TECHNICAL CONCLUSION
 ### 6.1 Attack Success Criteria
+
 ✅ Frida-server deployed and operational
+
 ✅ Port forwarding configured correctly
+
 ✅ Target process identified and attached
+
 ✅ Java-layer hooks registered successfully
+
 ✅ Native-layer hooks intercepting system calls
+
 ✅ Application no longer detects root environment
+
 ✅ No termination or crash observed
 
 ### 6.2 Security Implications
 This demonstration proves that client‑side root detection is insufficient for protecting sensitive applications. A determined attacker with physical access and Frida can:
 
-Spoof system properties
+- Spoof system properties
 
-Hide file existence
+- Hide file existence
 
-Block command execution
+- Block command execution
 
-Suppress warning dialogs
+- Suppress warning dialogs
 
-Force false return values from security checks
+- Force false return values from security checks
 
 ### 6.3 Defense Recommendations
 
