@@ -34,7 +34,7 @@ adb shell getprop ro.product.cpu.abi
 ```
 Result: x86_64 – 64-bit Intel architecture confirmed.
 
-<img width="555" height="40" alt="584130968-7a83dd97-7b70-424d-aefc-204f9d816f2b" src="https://github.com/user-attachments/assets/3afdfd3d-9776-4c8d-bcbf-f4feaaac708d" />
+<img width="555" height="40"  src="https://github.com/user-attachments/assets/3afdfd3d-9776-4c8d-bcbf-f4feaaac708d" />
 
 ---
 ## PHASE 2 – FRIDA DEPLOYMENT
@@ -47,7 +47,7 @@ adb shell ps | findstr frida
 ```
 Discovery: Process frida-server running with PID 5758 – injection ready.
 
-<img width="490" height="28" alt="584131158-2a3c2af9-b8d0-46cf-9e6a-fd06d9e61b24" src="https://github.com/user-attachments/assets/29ca2e8f-e560-4710-b7b7-cb584ab2ad6a" />
+<img width="490" height="28"  src="https://github.com/user-attachments/assets/29ca2e8f-e560-4710-b7b7-cb584ab2ad6a" />
 
 ### 2.2 Port Forwarding Configuration
 Network tunnels established for bidirectional communication between host and device.
@@ -63,7 +63,7 @@ tcp:27042 → tcp:27042
 tcp:27043 → tcp:27043
 ```
 
-<img width="278" height="59" alt="584132971-437291a0-a56c-403f-abf4-b2a16b29038d" src="https://github.com/user-attachments/assets/efc73917-986e-4d23-ac2d-ebab243d3091" />
+<img width="278" height="59"  src="https://github.com/user-attachments/assets/efc73917-986e-4d23-ac2d-ebab243d3091" />
 
 ### 2.3 Process Enumeration
 
@@ -74,7 +74,7 @@ frida-ps -U
 ```
 Notable Processes: Camera, Chrome, Google Play Store, Phone, Photos, Settings, and the target application.
 
-<img width="533" height="212" alt="584133113-1437195b-45ed-414e-974b-2651577b213f" src="https://github.com/user-attachments/assets/0a28b557-d83d-4c8d-baf1-7350c9acebf8" />
+<img width="533" height="212"  src="https://github.com/user-attachments/assets/0a28b557-d83d-4c8d-baf1-7350c9acebf8" />
 
 ### 2.4 Version Integrity Check
 Version consistency between client and server is critical for stable hooking.
@@ -84,7 +84,7 @@ frida --version
 Result: Version 17.9.1 matched across all components.
 ```
 
-<img width="438" height="50" alt="584140883-ddfb279d-9800-4bc7-a14b-8050af63905e" src="https://github.com/user-attachments/assets/ae858501-73fa-42fb-8cfc-d7b9a4341bb4" />
+<img width="438" height="50"  src="https://github.com/user-attachments/assets/ae858501-73fa-42fb-8cfc-d7b9a4341bb4" />
 
 ---
 ## PHASE 3 – ROOT DETECTION MECHANISMS IDENTIFIED
@@ -130,7 +130,7 @@ Console Output Analysis:
 ```
 Interpretation: All Java-layer root detection hooks successfully registered. The method sg.vantagepoint.a.c.a() which previously returned true (root detected) now returns false.
 
-<img width="584" height="101" alt="root_bypass_success" src="https://github.com/user-attachments/assets/2cffb81c-e9db-42d9-88b4-648b34de7d8d" />
+<img width="584" height="101"  src="https://github.com/user-attachments/assets/2cffb81c-e9db-42d9-88b4-648b34de7d8d" />
 
 ### 4.2 Multi‑Script Aggressive Bypass
 
